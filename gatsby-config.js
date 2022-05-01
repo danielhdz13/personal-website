@@ -13,5 +13,20 @@ module.exports = {
               path: `${__dirname}/blog`,
           }
       },
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+            name: `2022-timeline`,
+            path: `${__dirname}/timeline/2022-timeline`,
+        }
+      },
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+            name: `2021-timeline`,
+            path: `${__dirname}/timeline/2021-timeline`,
+        }
+      },
+      "gatsby-plugin-mdx",
   ],
 };
